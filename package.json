@@ -1,0 +1,25 @@
+{
+	"name": "ignite-daily-diet-server",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/LuanMiqueias/ignite-daily-diet-server.git",
+	"author": "<luanmiqueias92@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"dev": "npx tsx watch src/server.ts",
+		"knex": "node --trace-warnings --import tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile.ts"
+	},
+	"dependencies": {
+		"@fastify/cookie": "^9.3.1",
+		"dotenv": "^16.4.1",
+		"fastify": "^4.26.0",
+		"knex": "^3.1.0",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.16",
+		"sqlite3": "^5.1.7",
+		"tsx": "^4.7.0",
+		"typescript": "^5.3.3"
+	}
+}
